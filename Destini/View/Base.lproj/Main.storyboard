@@ -20,16 +20,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="bje-IC-ivL">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="30" y="54" width="354" height="798"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-qr-YWG">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="618"/>
-                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nkq-qr-YWG">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="598"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                         <color key="textColor" red="0.99607843137254903" green="0.78431372549019607" blue="0.60392156862745094" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lge-Aa-yFV">
-                                        <rect key="frame" x="0.0" y="638" width="374" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="lge-Aa-yFV">
+                                        <rect key="frame" x="0.0" y="618" width="354" height="80"/>
                                         <color key="backgroundColor" red="0.84313726430000002" green="0.36078432199999999" blue="0.47843140360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="PNc-eC-Fka"/>
@@ -44,9 +44,12 @@
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Taz-Wz-yXS"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjK-vB-j3O">
-                                        <rect key="frame" x="0.0" y="738" width="374" height="80"/>
+                                        <rect key="frame" x="0.0" y="718" width="354" height="80"/>
                                         <color key="backgroundColor" red="0.50980395079999996" green="0.3686274886" blue="0.63529413940000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="80" id="aZ5-Af-jig"/>
@@ -61,6 +64,9 @@
                                                 <integer key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uV9-3m-P23"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,15 +75,20 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="fB9-DF-Zvd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BGS-5z-LVg"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bje-IC-ivL" secondAttribute="trailing" id="DWW-dY-Srx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bje-IC-ivL" secondAttribute="trailing" constant="10" id="DWW-dY-Srx"/>
                             <constraint firstItem="fB9-DF-Zvd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OFD-cb-URS"/>
                             <constraint firstAttribute="trailing" secondItem="fB9-DF-Zvd" secondAttribute="trailing" id="Vn9-2a-Lis"/>
-                            <constraint firstItem="bje-IC-ivL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="X4P-Ak-bcM"/>
-                            <constraint firstItem="bje-IC-ivL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="d3c-YX-YtN"/>
+                            <constraint firstItem="bje-IC-ivL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="X4P-Ak-bcM"/>
+                            <constraint firstItem="bje-IC-ivL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="d3c-YX-YtN"/>
                             <constraint firstAttribute="bottom" secondItem="fB9-DF-Zvd" secondAttribute="bottom" id="vAS-Ps-crl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bje-IC-ivL" secondAttribute="bottom" id="vQs-84-x7T"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bje-IC-ivL" secondAttribute="bottom" constant="10" id="vQs-84-x7T"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="choiceOneButton" destination="lge-Aa-yFV" id="6H2-f0-Iuj"/>
+                        <outlet property="choiceTwoButton" destination="hjK-vB-j3O" id="dmB-Er-yt2"/>
+                        <outlet property="storyLabel" destination="Nkq-qr-YWG" id="Lnl-OZ-SVo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
